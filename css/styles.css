@@ -1,0 +1,411 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-size: 2em;
+  color: #80c7f2;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #dc853d;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #dc853d;
+}
+
+.iconos {
+  font-size: 2em;
+}
+
+.btn-secundario {
+  display: inline-block;
+  background-color: #cccccc;
+  width: 100%;
+  color: #4d4d4d;
+  border: none;
+  padding: 10px 0;
+  font-size: 1em;
+}
+
+.btn-secundario:hover {
+  background-color: #dc853d;
+  color: #fff;
+}
+
+.general-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.nav_principal {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.nav_principal_logo {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.nav_principal_logo img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.nav_principal_lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+
+.nav_principal_lista li {
+  border-right: 2px solid #dc853d;
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+}
+
+.nav_principal_lista li:last-child {
+  border-right: none;
+}
+
+.hero {
+  height: 70vh;
+  display: flex;
+  background: url("../images/bg-hero-min.jpg") center;
+  background-color: #999999;
+  background-blend-mode: multiply;
+  color: #fff;
+}
+
+.hero h1 {
+  color: #fff;
+}
+
+.hero__text {
+  max-width: 400px;
+  margin: 90px 210px auto auto;
+}
+
+.hero__text p {
+  font-size: 1.3em;
+}
+
+.servicios_container {
+  height: 300px;
+  max-width: 600px;
+  text-align: center;
+  margin: 50px auto;
+  padding: 0 0 20px 0;
+  border-bottom: 2px solid #dc853d;
+}
+
+.btn_glide {
+  background: none;
+  display: inline-block;
+  border: none;
+  font-size: 3em;
+  color: #dc853d;
+}
+
+.lineas_negocio {
+  margin-top: 20px;
+}
+
+.lineas_negocio__h2 {
+  text-align: center;
+}
+
+.lineas_negocio__etiquetas {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lineas_negocio__etiquetas__etiqueta {
+  background-color: #80c7f2;
+  padding: 5px 10px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.lineas_negocio__categorias {
+  display: grid;
+  grid-template: repeat(2, minmax(300px, 1fr))/repeat(3, 1fr);
+  margin-top: 40px;
+}
+
+.lineas_negocio__categorias__categoria {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.lineas_negocio__categorias__categoria:hover {
+  color: #4d4d4d;
+  font-weight: 400;
+}
+
+.lineas_negocio__categorias__categoria:hover .lineas_negocio__categorias__categoria__imagen {
+  display: none;
+}
+
+.lineas_negocio__categorias__categoria__imagen {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lineas_negocio__categorias__categoria__imagen.desarrollo {
+  background: url("../images/bg-desarrollo-min.JPG");
+  background-color: #999999;
+  background-blend-mode: multiply;
+}
+
+.lineas_negocio__categorias__categoria__imagen.desarrollo::before {
+  content: "Desarrollo Software";
+  padding-top: 45%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lineas_negocio__categorias__categoria__imagen.servicios_web {
+  background: url("../images/bg-servicios-web-min.jpg");
+  background-color: #999999;
+  background-blend-mode: multiply;
+}
+
+.lineas_negocio__categorias__categoria__imagen.servicios_web::before {
+  content: "Servicios Web";
+  padding-top: 45%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lineas_negocio__categorias__categoria__imagen.infraestructura {
+  background: url("../images/bg-infraestructura-min.jpg");
+  background-color: #999999;
+  background-blend-mode: multiply;
+}
+
+.lineas_negocio__categorias__categoria__imagen.infraestructura::before {
+  content: "Infraestructura y seguridad TI";
+  padding-top: 45%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lineas_negocio__categorias__categoria__imagen.telecomunicaciones {
+  background: url("../images/bg-telecomunicaciones-min.jpg");
+  background-color: #999999;
+  background-blend-mode: multiply;
+}
+
+.lineas_negocio__categorias__categoria__imagen.telecomunicaciones::before {
+  content: "Telecomunicaciones";
+  padding-top: 45%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lineas_negocio__categorias__categoria__imagen.consultoria {
+  background: url("../images/bg-consultoria-min.jpg");
+  background-color: #999999;
+  background-blend-mode: multiply;
+}
+
+.lineas_negocio__categorias__categoria__imagen.consultoria::before {
+  content: "Consultoría y Outsourcing";
+  padding-top: 45%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lineas_negocio__categorias__categoria__imagen.comercializacion {
+  background: url("../images/bg-comercializacion-min.jpg");
+  background-color: #999999;
+  background-blend-mode: multiply;
+}
+
+.lineas_negocio__categorias__categoria__imagen.comercializacion::before {
+  content: "Comercialización TI";
+  padding-top: 45%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.aside {
+  display: flex;
+}
+
+.aside__noticias {
+  width: 50%;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.aside__localizacion {
+  width: 50%;
+  height: 100%;
+}
+
+#mapa {
+  width: 100%;
+  height: 300px;
+}
+
+.footer {
+  background-color: #4d4d4d;
+  color: #fff;
+  display: flex;
+  padding: 40px;
+}
+
+.footer h4 {
+  margin: 0;
+}
+
+.footer__legal {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.footer__legal__link:active, .footer__legal__link:link, .footer__legal__link:visited {
+  color: #f2f2f2;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.footer__contacto {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 767px) {
+  .lineas_negocio__categorias {
+    grid-template: repeat(3, 370px)/repeat(2, 1fr);
+  }
+
+  .hero__text {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .lineas_negocio__categorias {
+    grid-template: repeat(6, 400px)/1fr;
+  }
+
+  .nav_principal_lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav_principal_lista li {
+    border-right: none;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+  }
+}
